@@ -105,6 +105,12 @@ public class Calculator : MonoBehaviour {
 			case "/":
 				result = x / y;
 				break;
+			case "^(":
+				result = Mathf.Pow(x, y);
+				break;
+			case "/(":
+				result = Mathf.Sqrt(x);
+				break;
 		}
 
 		return result;
